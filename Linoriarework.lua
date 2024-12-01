@@ -1964,7 +1964,7 @@ do
             Min = Info.Min;
             Max = Info.Max;
             Rounding = Info.Rounding;
-            MaxSize = 232;
+            MaxSize = 407;
             Type = 'Slider';
             Callback = Info.Callback or function(Value) end;
         };
@@ -2947,8 +2947,8 @@ function Library:CreateWindow(...)
     if type(Config.TabPadding) ~= 'number' then Config.TabPadding = 0 end
     if type(Config.MenuFadeTime) ~= 'number' then Config.MenuFadeTime = 0.2 end
 
-    if typeof(Config.Position) ~= 'UDim2' then Config.Position = UDim2.fromOffset(300, 50) end
-    if typeof(Config.Size) ~= 'UDim2' then Config.Size = UDim2.fromOffset(900, 600) end
+    if typeof(Config.Position) ~= 'UDim2' then Config.Position = UDim2.fromOffset(175, 50) end
+    if typeof(Config.Size) ~= 'UDim2' then Config.Size = UDim2.fromOffset(700, 600) end
 
     if Config.Center then
         Config.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -3026,7 +3026,7 @@ function Library:CreateWindow(...)
 
     local TabArea = Library:Create('Frame', {
         BackgroundTransparency = 1;
-        Position = UDim2.new(0, 210, 0, 8);
+        Position = UDim2.new(0, 250, 0, 8);
         Size = UDim2.new(1, -16, 0, 21);
         ZIndex = 1;
         Parent = MainSectionInner;
@@ -3042,7 +3042,7 @@ function Library:CreateWindow(...)
     local TabContainer = Library:Create('Frame', {
         BackgroundColor3 = Library.MainColor;
         BorderColor3 = Library.OutlineColor;
-        Position = UDim2.new(0, 8, 0, 30);
+        Position = UDim2.new(0, 4, 0, 30);
         Size = UDim2.new(1, -16, 1, -38);
         ZIndex = 2;
         Parent = MainSectionInner;
