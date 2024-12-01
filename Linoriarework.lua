@@ -1964,7 +1964,7 @@ do
             Min = Info.Min;
             Max = Info.Max;
             Rounding = Info.Rounding;
-            MaxSize = 407;
+            MaxSize = 264;
             Type = 'Slider';
             Callback = Info.Callback or function(Value) end;
         };
@@ -3296,7 +3296,7 @@ function Library:CreateWindow(...)
         function Tab:AddRightGroupbox(Name)
             return Tab:AddGroupbox({ Side = 2; Name = Name; });
         end;
-        function Tab:AddSuperRightGroupbox(Name)
+        function Tab:AddMiddleGroupbox(Name)
             return Tab:AddGroupbox({ Side = 3; Name = Name; });
         end;
         function Tab:AddTabbox(Info)
@@ -3652,5 +3652,4 @@ Players.PlayerAdded:Connect(OnPlayerChange);
 Players.PlayerRemoving:Connect(OnPlayerChange);
 
 getgenv().Library = Library
-
 return Library
