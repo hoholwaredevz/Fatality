@@ -3293,10 +3293,10 @@ function Library:CreateWindow(...)
             return Tab:AddGroupbox({ Side = 1; Name = Name; });
         end;
 
-        function Tab:AddRightGroupbox(Name)
+        function Tab:AddSuperRightGroupbox(Name)
             return Tab:AddGroupbox({ Side = 2; Name = Name; });
         end;
-        function Tab:AddSuperRightGroupbox(Name)
+        function Tab:AddRightGroupbox(Name)
             return Tab:AddGroupbox({ Side = 3; Name = Name; });
         end;
         function Tab:AddTabbox(Info)
