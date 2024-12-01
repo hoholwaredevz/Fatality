@@ -3105,7 +3105,7 @@ function Library:CreateWindow(...)
             Name = 'TabFrame',
             BackgroundTransparency = 1;
             Position = UDim2.new(0, 0, 0, 0);
-            Size = UDim2.new(0.66666666666667, 0, 1, 0);
+            Size = UDim2.new(0.67, 0, 1, 0);
             Visible = false;
             ZIndex = 2;
             Parent = TabContainer;
