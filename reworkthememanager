@@ -6,7 +6,7 @@ local ThemeManager = {} do
 
 	ThemeManager.Library = nil
 	ThemeManager.BuiltInThemes = {
-		['Default'] 		= { 1, httpService:JSONDecode('{"FontColor":"ff6600","MainColor":"1c1c1c","AccentColor":"ba8729","BackgroundColor":"141414","OutlineColor":"ff9100"}') },
+		['Default'] 		= { 1, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1c1c1c","AccentColor":"ba8729","BackgroundColor":"141414","OutlineColor":"ff9100"}') },
 	}
 
 	function ThemeManager:ApplyTheme(theme)
